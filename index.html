@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="checkWebFn()">
         <section class="main-section">
             <aside class="aside" id="sidebar">
                 <div class="close">
@@ -109,6 +109,11 @@
 
             const sidebar = document.getElementById("sidebar");
 
+            function checkWebFn() {
+                if(window.innerWidth < 998) {
+                    sidebar.classList.add("mobile")
+                }
+            }
             function sidebarFn() {
                 
                 if(window.innerWidth < 998) {
@@ -137,3 +142,4 @@
         </script>
     </body>
 </html>
+
