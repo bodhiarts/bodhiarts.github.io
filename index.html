@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bodhi Krishnan</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="main-section">
+            <aside class="aside" id="sidebar">
+                <div class="close">
+                    <i class="bi bi-x-lg" onclick="closeSidebarFn()" style="font-size: 25px; cursor: pointer;"></i>
+                </div>
+                <img
+                    src="./assets/bodhi.jpg"
+                    width="200"
+                    height="200"
+                    alt="profile"
+                    onclick="clickImageFn()">
+                <div>
+                    <h3>Bodhi Krishnan</h3>
+                </div>
+                <div class="about-artist">
+                    <p>
+                        Passionate about capturing the beauty of life through colors and shades, I am a Kerala-based painting artist working across watercolors, themes, and pencil sketches. Deeply inspired by nature, many of my works reflect the landscapes and moods of Kerala.
+                        <br>
+                        <br>
+                        I also create personalized artworks for special occasions, turning memories into timeless art.
+                    </p>
+                </div>
+                <div class="social-medias">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-envelope-at"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </aside>
+            <main>
+                <div class="banner">
+                    <img
+                        src="./assets/banner-img.jpg"
+                        width="100"
+                        height="100"
+                        alt="bodhi banner"
+                    >
+                </div>
+                <div class="quote">
+                    Every stroke tells a story of emotion, culture, and beauty.
+                </div>
+                <div class="gallery">
+                    <img src="./assets/gallery/img1.jpg" alt="gallery 1" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img2.jpg" alt="gallery 2" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img3.jpg" alt="gallery 3" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img4.jpg" alt="gallery 4" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img5.jpg" alt="gallery 5" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img6.jpg" alt="gallery 6" width="300" height="350" onclick="openLightbox(this)">
+                </div>
+                <div class="explore">
+                    <a href="#">
+                        explore more
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <footer>
+                    <p>© 2025 bodhiarts. All rights reserved. Do not copy or reuse without permission.</p>
+                </footer>
+            </main>
+        </section>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+        </div>
+        <!-- Script -->
+        <!-- 
+        all the scripts go here
+         -->
+        <script>
+            function openLightbox(img) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = img.src;
+            }
+            function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+            }
+        </script>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script>
+
+            const sidebar = document.getElementById("sidebar");
+
+            function sidebarFn() {
+                
+                if(window.innerWidth < 998) {
+                    sidebar.classList.add("mobile")
+                }
+                else {
+                    sidebar.classList.remove("mobile")
+                    if(sidebar.classList.contains("view")) {
+                        sidebar.classList.remove("view")
+                    }
+                }
+            }
+
+            function clickImageFn() {
+                
+                if(sidebar.classList.contains("mobile")) {
+                    sidebar.classList.add("view") 
+                }
+            }
+
+            function closeSidebarFn() {
+                sidebar.classList.remove("view") 
+            }
+
+            window.addEventListener("resize", sidebarFn);
+        </script>
+    </body>
+</html>
