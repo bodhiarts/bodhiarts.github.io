@@ -22,9 +22,9 @@ Beyond my personal collections, I also create **personalized, custom artworks** 
 ## 📸 Sneak Peek
 Here is a glimpse of some featured artworks you will find on the website:
 
-| 🌾 Landscape Art |
+🌾 Landscape Art
 | :---: | :---: |
-| ![Landscape Sample](https://bodhiarts.github.io/assets/gallery/img1.jpg) |
+[Landscape Sample](https://bodhiarts.github.io/assets/gallery/img1.jpg)
 
 ---
 
