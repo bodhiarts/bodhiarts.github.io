@@ -3,9 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bodhi Krishnan</title>
+        <title>Bodhi Krishnan Art Portfolio</title>
+        <meta name="description" content="Explore the art portfolio of Bodhi Krishnan (bodhiarts). Featuring vibrant watercolors, realistic pencil sketches, and nature-inspired themes capturing the essence of Kerala." />
+
+        <!-- Open Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bodhiarts.github.io/" />
+        <meta property="og:title" content="Bodhi Krishnan Art Portfolio | Kerala-Based Painting & Sketch Artist" />
+        <meta property="og:description" content="Explore vibrant watercolors, pencil sketches, and nature-inspired themes capturing the beauty of Kerala. Available for personalized commission artworks." />
+        <meta property="og:image" content="https://bodhiarts.github.io/public/og-img.jpg" />
+        <meta property="og:site_name" content="Bodhi Krishnan Art Portfolio" />
+        
+        <!-- X / Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://bodhiarts.github.io/" />
+        <meta name="twitter:title" content="Bodhi Krishnan Art Portfolio | Kerala-Based Painting & Sketch Artist" />
+        <meta name="twitter:description" content="Explore vibrant watercolors, pencil sketches, and nature-inspired themes capturing the beauty of Kerala. Available for personalized commission artworks." />
+        <meta name="twitter:image" content="https://bodhiarts.github.io/public/og-img.jpg" />
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="./assets/favicon.png">
+        <link rel="icon" type="image/png" href="./public/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -36,20 +52,11 @@
                     </p>
                 </div>
                 <div class="social-medias">
-                    <a href="#">
+                    <a href="https://www.instagram.com/bodhi_artz">
                         <i class="bi bi-instagram"></i>
                     </a>
                     <a href="#">
                         <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bi bi-discord"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bi bi-envelope-at"></i>
-                    </a>
-                    <a href="#">
-                        <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
             </aside>
@@ -59,19 +66,19 @@
                         src="./assets/banner-img.jpg"
                         width="100"
                         height="100"
-                        alt="bodhi banner"
+                        alt="bodhi krishnan, kerala artist portfolio banner"
                     >
                 </div>
                 <div class="quote">
                     Every stroke tells a story of emotion, culture, and beauty.
                 </div>
                 <div class="gallery">
-                    <img src="./assets/gallery/img1.jpg" alt="gallery 1" width="300" height="350" onclick="openLightbox(this)">
-                    <img src="./assets/gallery/img2.jpg" alt="gallery 2" width="300" height="350" onclick="openLightbox(this)">
-                    <img src="./assets/gallery/img3.jpg" alt="gallery 3" width="300" height="350" onclick="openLightbox(this)">
-                    <img src="./assets/gallery/img4.jpg" alt="gallery 4" width="300" height="350" onclick="openLightbox(this)">
-                    <img src="./assets/gallery/img5.jpg" alt="gallery 5" width="300" height="350" onclick="openLightbox(this)">
-                    <img src="./assets/gallery/img6.jpg" alt="gallery 6" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img1.jpg" alt="Landscape showing a deer and valley by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img2.jpg" alt="Two parrots sharing a lovable moment by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img3.jpg" alt="Backwater view of Kerala by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img4.jpg" alt="An elephant and mahout with villagers during a Kerala festival by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img5.jpg" alt="Thematic painting of the Theyyam tradition of Kerala by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
+                    <img src="./assets/gallery/img6.jpg" alt="Darpana Sundari artwork by Bodhi Krishnan, a Kerala-based artist" width="300" height="350" onclick="openLightbox(this)">
                 </div>
                 <div class="explore">
                     <a href="#">
@@ -81,7 +88,7 @@
                 </div>
 
                 <footer>
-                    <p>© 2025 bodhiarts. All rights reserved. Do not copy or reuse without permission.</p>
+                    <p>© <span id="year">2025</span> bodhiarts (Bodhi Krishnan). All rights reserved. Do not copy or reuse without permission.</p>
                 </footer>
             </main>
         </section>
@@ -94,6 +101,10 @@
         all the scripts go here
          -->
         <script>
+
+            // copyright Date
+            document.getElementById("year").textContent = new Date().getFullYear();
+            // 
             function openLightbox(img) {
             document.getElementById("lightbox").style.display = "flex";
             document.getElementById("lightbox-img").src = img.src;
