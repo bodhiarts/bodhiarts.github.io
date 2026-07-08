@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host & Sitemap
+Host: https://bodhiarts.github.io/
+Sitemap: https://bodhiarts.github.io/sitemap.xml
