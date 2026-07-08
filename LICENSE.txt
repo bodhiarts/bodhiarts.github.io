@@ -1,4 +1,5 @@
-© 2025 bodhiarts. All rights reserved.
+Copyright © 2026 bodhiarts(Bodhi Krishnan). All rights reserved.
 
-Permission to copy, modify, or distribute any part of this repository or website content
-must be obtained in writing from the copyright holder (bodhiarts).
+This repository and all of its contents—including text, images, artwork, and code—are the intellectual property of the copyright holder (bodhiarts).
+
+No part of this repository or website may be copied, modified, distributed, or repurposed in any form without prior written permission from the copyright holder.
