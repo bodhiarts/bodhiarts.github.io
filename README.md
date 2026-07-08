@@ -24,7 +24,7 @@ Here is a glimpse of some featured artworks you will find on the website:
 
 🌾 Landscape Art
 | :---: | :---: |
-[Landscape Sample](https://bodhiarts.github.io/assets/gallery/img1.jpg)
+![Landscape Sample](https://bodhiarts.github.io/assets/gallery/img1.jpg)
 
 ---
 
